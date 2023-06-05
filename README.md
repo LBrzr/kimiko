@@ -11,8 +11,17 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Kimiko Desgin, a Flutter package for creating beautiful and responsive UIs. by AKA
+Contains multiple pre-built
+* widgets:
+  - TextField, with defined validators, shapes ...
+  - DropDown and DateDropDrop, which are custom drop down buttons with smooth animation using overlays
+  - Flat and Outlined buttons extending ReactableMixins with shows loading indicator on action progress
+  - Custom RichText which colors and makes text clickable
+* Mixins:
+  - ThemeAndSize provides context based Theme and MediaQueries to StatefullWidget's State
+  - Requester provides sendRequest method which handles all http requests
+  - PhoneVerification provides firebase phone verification workflow for StatefullWidget's State
 
 ## Features
 
