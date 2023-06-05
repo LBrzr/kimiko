@@ -1,0 +1,91 @@
+name: kimiko
+description: Kimiko Desgin, a Flutter package for creating beautiful and responsive UIs. by AKA
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.19.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  animations: ^2.0.7
+  country_list_pick:
+    git:
+      url: https://github.com/LBrzr/country-list-pick.git
+  flutter:
+    sdk: flutter
+  http: ^0.13.5
+  iconly: ^1.0.1
+  loading_animation_widget: ^1.2.0+4
+  rxdart: ^0.27.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+linter:
+  rules:
+    - use_super_parameters
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  fonts:
+    - family: Signika
+      fonts:
+        - asset: assets/fonts/signika/Signika-Bold.ttf
+          weight: 800
+        - asset: assets/fonts/signika/Signika-SemiBold.ttf
+          weight: 700
+        - asset: assets/fonts/signika/Signika-Medium.ttf
+          weight: 600
+        - asset: assets/fonts/signika/Signika-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/signika/Signika-Light.ttf
+          weight: 100
+    - family: HP
+      fonts:
+        - asset: assets/fonts/hp/hp-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/hp/hp-BoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/hp/hp-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/hp/hp-Italic.ttf
+          weight: 400
+          style: italic
+
+  # To add assets to your package, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  #
+  # For details regarding assets in packages, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  #
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # To add custom fonts to your package, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts in packages, see
+  # https://flutter.dev/custom-fonts/#from-packages
