@@ -145,7 +145,6 @@ class _KimikoTextFieldState extends State<KimikoTextField>
 
   @override
   initState() {
-    super.initState();
     obscure = widget.hide;
     super.initState();
   }
@@ -154,6 +153,7 @@ class _KimikoTextFieldState extends State<KimikoTextField>
   Widget build(BuildContext context) {
     return FormField(
       validator: widget.validator,
+      initialValue: widget.controller?.text,
       builder: (field) {
         final title = Text(widget.label,
             style: textTheme.bodyMedium!
