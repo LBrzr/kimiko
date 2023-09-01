@@ -34,6 +34,9 @@ linter:
 # The following section is specific to Flutter packages.
 flutter:
   fonts:
+    - family:  KimikoIcons
+      fonts:
+        - asset: ./assets/fonts/KimikoIcons.ttf
     - family: Signika
       fonts:
         - asset: assets/fonts/signika/Signika-Bold.ttf
