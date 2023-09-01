@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "try",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "./exemple/",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+        },
+        {
             "name": "kimiko",
             "request": "launch",
             "type": "dart"
