@@ -6,7 +6,7 @@ import 'strings.dart';
 class KimikoConstants {
   const KimikoConstants._();
 
-  static const borderSideWidth = .75, minPasswordLength = 6;
+  static const borderSideWidth = 1.0, minPasswordLength = 6;
 
   static final borderRadius = BorderRadius.circular(6),
       borderRadiusBig = BorderRadius.circular(8),
@@ -15,9 +15,9 @@ class KimikoConstants {
   static const bodyColor = Color(0xff2E384D),
       displayColor = Color(0xff2E384D),
       disabledColor = Color(0xff8C98A9),
-      primaryColor = Color(0xff2E5BFF),
+      primaryColor = Color(0xFF556197),
       primaryColorDark = Color(0xff182E8D),
-      primaryColorLight = Color(0xff4970FF),
+      primaryColorLight = Color(0xFF8392D3),
       secondaryColor = Color(0xffFFE066),
       goodColor = Color(0xff78e08f),
       errorColor = Color(0xffFF7C7C),
@@ -32,12 +32,12 @@ class KimikoConstants {
       theme = ThemeData(
         scaffoldBackgroundColor: scaffoldBackgroundColor,
         typography: Typography.material2018(black: typo),
-        textTheme: typo,
+        // textTheme: typo,
         shadowColor: const Color(0x45567d8f),
         primaryColor: primaryColor,
         primaryColorDark: primaryColorDark,
         primaryColorLight: primaryColorLight,
-        iconTheme: const IconThemeData(color: Color(0xffD3DBF8), size: 24),
+        iconTheme: const IconThemeData(color: Color(0xFF556197), size: 24),
         tabBarTheme: TabBarTheme(
           labelColor: bodyColor,
           unselectedLabelColor: disabledColor,

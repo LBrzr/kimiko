@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kimiko/kimiko.dart';
 
 import '/src/mixins/theme_and_size.dart';
 import '/src/resources/constants.dart';

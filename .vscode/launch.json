@@ -5,6 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "try web",
+            "type": "dart",
+            "request": "launch",
+            "cwd": "./exemple/",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "edge",
+            "args": [
+                "--web-renderer=html"
+            ]
+        },
+        {
             "name": "try",
             "type": "dart",
             "request": "launch",

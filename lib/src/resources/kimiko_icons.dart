@@ -6,271 +6,135 @@ class KimikoIcons {
   KimikoIcons._();
 
   static const _kFontFam = 'KimikoIcons';
-  static const String? _kFontPkg = null;
+  static const String _kFontPkg = 'kimiko';
 
-  static const IconData x_circle_16 =
+  static const IconData x_circle =
       IconData(0xe800, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_circle_24 =
-      IconData(0xe801, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_circle_fill_12 =
-      IconData(0xe802, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_circle_fill_16 =
+  static const IconData x_circle_fill =
       IconData(0xe803, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_circle_fill_24 =
-      IconData(0xe804, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zap_16 =
+  static const IconData zap =
       IconData(0xe805, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zap_24 =
-      IconData(0xe806, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zoom_in_16 =
+  static const IconData zoom_in =
       IconData(0xe807, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zoom_in_24 =
-      IconData(0xe808, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zoom_out_16 =
+  static const IconData zoom_out =
       IconData(0xe809, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData zoom_out_24 =
-      IconData(0xe80a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData accessibility_16 =
+  static const IconData accessibility =
       IconData(0xe80b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData accessibility_inset_16 =
+  static const IconData accessibility_inset =
       IconData(0xe80c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData alert_16 =
+  static const IconData alert =
       IconData(0xe80d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData alert_24 =
-      IconData(0xe80e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData alert_fill_12 =
-      IconData(0xe80f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData alert_fill_16 =
+  static const IconData alert_fill =
       IconData(0xe810, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData alert_fill_24 =
-      IconData(0xe811, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData apps_16 =
+  static const IconData apps =
       IconData(0xe812, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData archive_16 =
+  static const IconData archive =
       IconData(0xe813, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData archive_24 =
-      IconData(0xe814, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_both_16 =
+  static const IconData arrow_both =
       IconData(0xe815, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_both_24 =
-      IconData(0xe816, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_16 =
+  static const IconData arrow_down =
       IconData(0xe817, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_24 =
-      IconData(0xe818, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_left_16 =
+  static const IconData arrow_down_left =
       IconData(0xe819, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_left_24 =
-      IconData(0xe81a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_right_16 =
+  static const IconData arrow_down_right =
       IconData(0xe81b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_down_right_24 =
-      IconData(0xe81c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_left_16 =
+  static const IconData arrow_left =
       IconData(0xe81d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_left_24 =
-      IconData(0xe81e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_right_16 =
+  static const IconData arrow_right =
       IconData(0xe81f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_right_24 =
-      IconData(0xe820, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_switch_16 =
+  static const IconData arrow_switch =
       IconData(0xe821, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_switch_24 =
-      IconData(0xe822, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_16 =
+  static const IconData arrow_up =
       IconData(0xe823, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_24 =
-      IconData(0xe824, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_left_16 =
+  static const IconData arrow_up_left =
       IconData(0xe825, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_left_24 =
-      IconData(0xe826, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_right_16 =
+  static const IconData arrow_up_right =
       IconData(0xe827, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData arrow_up_right_24 =
-      IconData(0xe828, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData beaker_16 =
+  static const IconData beaker =
       IconData(0xe829, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData beaker_24 =
-      IconData(0xe82a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_16 =
+  static const IconData bell =
       IconData(0xe82b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_24 =
-      IconData(0xe82c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_fill_16 =
+  static const IconData bell_fill =
       IconData(0xe82d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_fill_24 =
-      IconData(0xe82e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_slash_16 =
+  static const IconData bell_slash =
       IconData(0xe82f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bell_slash_24 =
-      IconData(0xe830, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData blocked_16 =
+  static const IconData blocked =
       IconData(0xe831, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData blocked_24 =
-      IconData(0xe832, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bold_16 =
+  static const IconData bold =
       IconData(0xe833, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bold_24 =
-      IconData(0xe834, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData book_16 =
+  static const IconData book =
       IconData(0xe835, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData book_24 =
-      IconData(0xe836, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_16 =
+  static const IconData bookmark =
       IconData(0xe837, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_24 =
-      IconData(0xe838, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_fill_24 =
-      IconData(0xe839, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_slash_16 =
+  static const IconData bookmark_slash =
       IconData(0xe83a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_slash_24 =
-      IconData(0xe83b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bookmark_slash_fill_24 =
-      IconData(0xe83c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData briefcase_16 =
+  static const IconData briefcase =
       IconData(0xe83d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData briefcase_24 =
-      IconData(0xe83e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData broadcast_16 =
+  static const IconData broadcast =
       IconData(0xe83f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData broadcast_24 =
-      IconData(0xe840, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData browser_16 =
+  static const IconData browser =
       IconData(0xe841, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData browser_24 =
-      IconData(0xe842, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bug_16 =
+  static const IconData bug =
       IconData(0xe843, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData bug_24 =
-      IconData(0xe844, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cache_16 =
+  static const IconData cache =
       IconData(0xe845, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData calendar_16 =
+  static const IconData calendar =
       IconData(0xe846, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData calendar_24 =
-      IconData(0xe847, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_16 =
+  static const IconData check =
       IconData(0xe848, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_24 =
-      IconData(0xe849, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData checkbox_16 =
+  static const IconData checkbox =
       IconData(0xe84a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData checkbox_24 =
-      IconData(0xe84b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_circle_16 =
+  static const IconData check_circle =
       IconData(0xe84c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_circle_24 =
-      IconData(0xe84d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_circle_fill_12 =
-      IconData(0xe84e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_circle_fill_16 =
+  static const IconData check_circle_fill =
       IconData(0xe84f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData check_circle_fill_24 =
-      IconData(0xe850, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData checklist_16 =
+  static const IconData checklist =
       IconData(0xe851, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData checklist_24 =
-      IconData(0xe852, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_down_12 =
-      IconData(0xe853, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_down_16 =
+  static const IconData chevron_down =
       IconData(0xe854, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_down_24 =
-      IconData(0xe855, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_left_16 =
+  static const IconData chevron_left =
       IconData(0xe856, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_left_24 =
-      IconData(0xe857, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_right_12 =
-      IconData(0xe858, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_right_16 =
+  static const IconData chevron_right =
       IconData(0xe859, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_right_24 =
-      IconData(0xe85a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_up_12 =
-      IconData(0xe85b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_up_16 =
+  static const IconData chevron_up =
       IconData(0xe85c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData chevron_up_24 =
-      IconData(0xe85d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData circle_16 =
+  static const IconData circle =
       IconData(0xe85e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData circle_24 =
-      IconData(0xe85f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData circle_slash_16 =
+  static const IconData circle_slash =
       IconData(0xe860, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData circle_slash_24 =
-      IconData(0xe861, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData clock_16 =
+  static const IconData clock =
       IconData(0xe862, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData clock_24 =
-      IconData(0xe863, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData clock_fill_16 =
+  static const IconData clock_fill =
       IconData(0xe864, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData clock_fill_24 =
-      IconData(0xe865, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cloud_16 =
+  static const IconData cloud =
       IconData(0xe866, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cloud_24 =
-      IconData(0xe867, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cloud_offline_16 =
+  static const IconData cloud_offline =
       IconData(0xe868, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cloud_offline_24 =
-      IconData(0xe869, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_16 =
+  static const IconData code =
       IconData(0xe86a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_24 =
-      IconData(0xe86b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_of_conduct_16 =
+  static const IconData code_of_conduct =
       IconData(0xe86c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_of_conduct_24 =
-      IconData(0xe86d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_review_16 =
+  static const IconData code_review =
       IconData(0xe86e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_review_24 =
-      IconData(0xe86f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codescan_16 =
+  static const IconData codescan =
       IconData(0xe870, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codescan_24 =
-      IconData(0xe871, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codescan_checkmark_16 =
+  static const IconData codescan_checkmark =
       IconData(0xe872, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codescan_checkmark_24 =
-      IconData(0xe873, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codespaces_16 =
+  static const IconData codespaces =
       IconData(0xe874, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData codespaces_24 =
-      IconData(0xe875, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_square_16 =
+  static const IconData code_square =
       IconData(0xe876, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData code_square_24 =
-      IconData(0xe877, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData columns_16 =
+  static const IconData columns =
       IconData(0xe878, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData columns_24 =
-      IconData(0xe879, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData command_palette_16 =
+  static const IconData command_palette =
       IconData(0xe87a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData command_palette_24 =
-      IconData(0xe87b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData comment_16 =
+  static const IconData comment =
       IconData(0xe87c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData comment_24 =
-      IconData(0xe87d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData comment_discussion_16 =
+  static const IconData comment_discussion =
       IconData(0xe87e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData comment_discussion_24 =
-      IconData(0xe87f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData commit_24 =
-      IconData(0xe880, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData container_16 =
+  static const IconData container =
       IconData(0xe881, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData container_24 =
-      IconData(0xe882, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData copilot_16 =
+  static const IconData copilot =
       IconData(0xe883, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData copilot_24 =
       IconData(0xe884, fontFamily: _kFontFam, fontPackage: _kFontPkg);
@@ -278,938 +142,516 @@ class KimikoIcons {
       IconData(0xe885, fontFamily: _kFontFam, fontPackage: _kFontPkg);
   static const IconData copilot_96 =
       IconData(0xe886, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData copilot_error_16 =
+  static const IconData copilot_error =
       IconData(0xe887, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData copilot_warning_16 =
+  static const IconData copilot_warning =
       IconData(0xe888, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData copy_16 =
+  static const IconData copy =
       IconData(0xe889, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData copy_24 =
-      IconData(0xe88a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cpu_16 =
+  static const IconData cpu =
       IconData(0xe88b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cpu_24 =
-      IconData(0xe88c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData credit_card_16 =
+  static const IconData credit_card =
       IconData(0xe88d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData credit_card_24 =
-      IconData(0xe88e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cross_reference_16 =
+  static const IconData cross_reference =
       IconData(0xe88f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData cross_reference_24 =
-      IconData(0xe890, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dash_16 =
+  static const IconData dash =
       IconData(0xe891, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dash_24 =
-      IconData(0xe892, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData database_16 =
+  static const IconData database =
       IconData(0xe893, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData database_24 =
-      IconData(0xe894, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dependabot_16 =
+  static const IconData dependabot =
       IconData(0xe895, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dependabot_24 =
-      IconData(0xe896, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData desktop_download_16 =
+  static const IconData desktop_download =
       IconData(0xe897, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData desktop_download_24 =
-      IconData(0xe898, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_camera_16 =
+  static const IconData device_camera =
       IconData(0xe899, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_camera_video_16 =
+  static const IconData device_camera_video =
       IconData(0xe89a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_camera_video_24 =
-      IconData(0xe89b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_desktop_16 =
+  static const IconData device_desktop =
       IconData(0xe89c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_desktop_24 =
-      IconData(0xe89d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_mobile_16 =
+  static const IconData device_mobile =
       IconData(0xe89e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData device_mobile_24 =
-      IconData(0xe89f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData devices_16 =
+  static const IconData devices =
       IconData(0xe8a0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData devices_24 =
-      IconData(0xe8a1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diamond_16 =
+  static const IconData diamond =
       IconData(0xe8a2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diamond_24 =
-      IconData(0xe8a3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_16 =
+  static const IconData diff =
       IconData(0xe8a4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_24 =
-      IconData(0xe8a5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_added_16 =
+  static const IconData diff_added =
       IconData(0xe8a6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_ignored_16 =
+  static const IconData diff_ignored =
       IconData(0xe8a7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_modified_16 =
+  static const IconData diff_modified =
       IconData(0xe8a8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_removed_16 =
+  static const IconData diff_removed =
       IconData(0xe8a9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData diff_renamed_16 =
+  static const IconData diff_renamed =
       IconData(0xe8aa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_closed_16 =
+  static const IconData discussion_closed =
       IconData(0xe8ab, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_closed_24 =
-      IconData(0xe8ac, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_duplicate_16 =
+  static const IconData discussion_duplicate =
       IconData(0xe8ad, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_duplicate_24 =
-      IconData(0xe8ae, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_outdated_16 =
+  static const IconData discussion_outdated =
       IconData(0xe8af, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData discussion_outdated_24 =
-      IconData(0xe8b0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dot_16 =
+  static const IconData dot =
       IconData(0xe8b1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dot_24 =
-      IconData(0xe8b2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dot_fill_16 =
+  static const IconData dot_fill =
       IconData(0xe8b3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData dot_fill_24 =
-      IconData(0xe8b4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData download_16 =
+  static const IconData download =
       IconData(0xe8b5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData download_24 =
-      IconData(0xe8b6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData duplicate_16 =
+  static const IconData duplicate =
       IconData(0xe8b7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData duplicate_24 =
-      IconData(0xe8b8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData ellipsis_16 =
+  static const IconData ellipsis =
       IconData(0xe8b9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData eye_16 =
+  static const IconData eye =
       IconData(0xe8ba, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData eye_24 =
-      IconData(0xe8bb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData eye_closed_16 =
+  static const IconData eye_closed =
       IconData(0xe8bc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData eye_closed_24 =
-      IconData(0xe8bd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_discussion_16 =
+  static const IconData feed_discussion =
       IconData(0xe8be, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_forked_16 =
+  static const IconData feed_forked =
       IconData(0xe8bf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_heart_16 =
+  static const IconData feed_heart =
       IconData(0xe8c0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_issue_closed_16 =
+  static const IconData feed_issue_closed =
       IconData(0xe8c1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_issue_draft_16 =
+  static const IconData feed_issue_draft =
       IconData(0xe8c2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_issue_open_16 =
+  static const IconData feed_issue_open =
       IconData(0xe8c3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_issue_reopen_16 =
+  static const IconData feed_issue_reopen =
       IconData(0xe8c4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_merged_16 =
+  static const IconData feed_merged =
       IconData(0xe8c5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_person_16 =
+  static const IconData feed_person =
       IconData(0xe8c6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_plus_16 =
+  static const IconData feed_plus =
       IconData(0xe8c7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_public_16 =
+  static const IconData feed_public =
       IconData(0xe8c8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_pull_request_closed_16 =
+  static const IconData feed_pull_request_closed =
       IconData(0xe8c9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_pull_request_draft_16 =
+  static const IconData feed_pull_request_draft =
       IconData(0xe8ca, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_pull_request_open_16 =
+  static const IconData feed_pull_request_open =
       IconData(0xe8cb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_repo_16 =
+  static const IconData feed_repo =
       IconData(0xe8cc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_rocket_16 =
+  static const IconData feed_rocket =
       IconData(0xe8cd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_star_16 =
+  static const IconData feed_star =
       IconData(0xe8ce, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_tag_16 =
+  static const IconData feed_tag =
       IconData(0xe8cf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData feed_trophy_16 =
+  static const IconData feed_trophy =
       IconData(0xe8d0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_16 =
+  static const IconData file =
       IconData(0xe8d1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_24 =
-      IconData(0xe8d2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_added_16 =
+  static const IconData file_added =
       IconData(0xe8d3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_badge_16 =
+  static const IconData file_badge =
       IconData(0xe8d4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_binary_16 =
+  static const IconData file_binary =
       IconData(0xe8d5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_binary_24 =
-      IconData(0xe8d6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_code_16 =
+  static const IconData file_code =
       IconData(0xe8d7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_code_24 =
-      IconData(0xe8d8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_diff_16 =
+  static const IconData file_diff =
       IconData(0xe8d9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_diff_24 =
-      IconData(0xe8da, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_16 =
+  static const IconData file_directory =
       IconData(0xe8db, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_24 =
-      IconData(0xe8dc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_fill_16 =
+  static const IconData file_directory_fill =
       IconData(0xe8dd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_fill_24 =
-      IconData(0xe8de, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_open_fill_16 =
+  static const IconData file_directory_open_fill =
       IconData(0xe8df, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_symlink_16 =
+  static const IconData file_directory_symlink =
       IconData(0xe8e0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_directory_symlink_24 =
-      IconData(0xe8e1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_media_24 =
-      IconData(0xe8e2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_moved_16 =
+  static const IconData file_moved =
       IconData(0xe8e3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_removed_16 =
+  static const IconData file_removed =
       IconData(0xe8e4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_submodule_16 =
+  static const IconData file_submodule =
       IconData(0xe8e5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_submodule_24 =
-      IconData(0xe8e6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_symlink_file_16 =
+  static const IconData file_symlink_file =
       IconData(0xe8e7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_symlink_file_24 =
-      IconData(0xe8e8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_zip_16 =
+  static const IconData file_zip =
       IconData(0xe8e9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData file_zip_24 =
-      IconData(0xe8ea, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData filter_16 =
+  static const IconData filter =
       IconData(0xe8eb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData filter_24 =
-      IconData(0xe8ec, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fiscal_host_16 =
+  static const IconData fiscal_host =
       IconData(0xe8ed, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData flame_16 =
+  static const IconData flame =
       IconData(0xe8ee, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData flame_24 =
-      IconData(0xe8ef, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_16 =
+  static const IconData fold =
       IconData(0xe8f0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_24 =
-      IconData(0xe8f1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_down_16 =
+  static const IconData fold_down =
       IconData(0xe8f2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_down_24 =
-      IconData(0xe8f3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_up_16 =
+  static const IconData fold_up =
       IconData(0xe8f4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData fold_up_24 =
-      IconData(0xe8f5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData gear_16 =
+  static const IconData gear =
       IconData(0xe8f6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData gear_24 =
-      IconData(0xe8f7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData gift_16 =
+  static const IconData gift =
       IconData(0xe8f8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData gift_24 =
-      IconData(0xe8f9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_branch_16 =
+  static const IconData git_branch =
       IconData(0xe8fa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_branch_24 =
-      IconData(0xe8fb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_commit_16 =
+  static const IconData git_commit =
       IconData(0xe8fc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_commit_24 =
-      IconData(0xe8fd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_compare_16 =
+  static const IconData git_compare =
       IconData(0xe8fe, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_compare_24 =
-      IconData(0xe8ff, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_merge_16 =
+  static const IconData git_merge =
       IconData(0xe900, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_merge_24 =
-      IconData(0xe901, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_merge_queue_16 =
+  static const IconData git_merge_queue =
       IconData(0xe902, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_merge_queue_24 =
-      IconData(0xe903, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_16 =
+  static const IconData git_pull_request =
       IconData(0xe904, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_24 =
-      IconData(0xe905, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_closed_16 =
+  static const IconData git_pull_request_closed =
       IconData(0xe906, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_closed_24 =
-      IconData(0xe907, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_draft_16 =
+  static const IconData git_pull_request_draft =
       IconData(0xe908, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData git_pull_request_draft_24 =
-      IconData(0xe909, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData globe_16 =
+  static const IconData globe =
       IconData(0xe90a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData globe_24 =
-      IconData(0xe90b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData goal_16 =
+  static const IconData goal =
       IconData(0xe90c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData goal_24 =
-      IconData(0xe90d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData grabber_16 =
+  static const IconData grabber =
       IconData(0xe90e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData grabber_24 =
-      IconData(0xe90f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData graph_16 =
+  static const IconData graph =
       IconData(0xe910, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData graph_24 =
-      IconData(0xe911, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hash_16 =
+  static const IconData hash =
       IconData(0xe912, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hash_24 =
-      IconData(0xe913, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heading_16 =
+  static const IconData heading =
       IconData(0xe914, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heading_24 =
-      IconData(0xe915, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heart_16 =
+  static const IconData heart =
       IconData(0xe916, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heart_24 =
-      IconData(0xe917, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heart_fill_16 =
+  static const IconData heart_fill =
       IconData(0xe918, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData heart_fill_24 =
-      IconData(0xe919, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData history_16 =
+  static const IconData history =
       IconData(0xe91a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData history_24 =
-      IconData(0xe91b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData home_16 =
+  static const IconData home =
       IconData(0xe91c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData home_24 =
-      IconData(0xe91d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData home_fill_24 =
-      IconData(0xe91e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData horizontal_rule_16 =
+  static const IconData horizontal_rule =
       IconData(0xe91f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData horizontal_rule_24 =
-      IconData(0xe920, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hourglass_16 =
+  static const IconData hourglass =
       IconData(0xe921, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hourglass_24 =
-      IconData(0xe922, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hubot_16 =
+  static const IconData hubot =
       IconData(0xe923, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData hubot_24 =
-      IconData(0xe924, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData id_badge_16 =
+  static const IconData id_badge =
       IconData(0xe925, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData image_16 =
+  static const IconData image =
       IconData(0xe926, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData image_24 =
-      IconData(0xe927, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData inbox_16 =
+  static const IconData inbox =
       IconData(0xe928, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData inbox_24 =
-      IconData(0xe929, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData infinity_16 =
+  static const IconData infinity =
       IconData(0xe92a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData infinity_24 =
-      IconData(0xe92b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData info_16 =
+  static const IconData info =
       IconData(0xe92c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData info_24 =
-      IconData(0xe92d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_closed_16 =
+  static const IconData issue_closed =
       IconData(0xe92e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_closed_24 =
-      IconData(0xe92f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_draft_16 =
+  static const IconData issue_draft =
       IconData(0xe930, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_draft_24 =
-      IconData(0xe931, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_opened_16 =
+  static const IconData issue_opened =
       IconData(0xe932, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_opened_24 =
-      IconData(0xe933, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_reopened_16 =
+  static const IconData issue_reopened =
       IconData(0xe934, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_reopened_24 =
-      IconData(0xe935, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_tracked_by_16 =
+  static const IconData issue_tracked_by =
       IconData(0xe936, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_tracked_by_24 =
-      IconData(0xe937, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_tracks_16 =
+  static const IconData issue_tracks =
       IconData(0xe938, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData issue_tracks_24 =
-      IconData(0xe939, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData italic_16 =
+  static const IconData italic =
       IconData(0xe93a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData italic_24 =
-      IconData(0xe93b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData iterations_16 =
+  static const IconData iterations =
       IconData(0xe93c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData iterations_24 =
-      IconData(0xe93d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData kebab_horizontal_16 =
+  static const IconData kebab_horizontal =
       IconData(0xe93e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData kebab_horizontal_24 =
-      IconData(0xe93f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData key_16 =
+  static const IconData key =
       IconData(0xe940, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData key_24 =
-      IconData(0xe941, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData key_asterisk_16 =
+  static const IconData key_asterisk =
       IconData(0xe942, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData law_16 =
+  static const IconData law =
       IconData(0xe943, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData law_24 =
-      IconData(0xe944, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData light_bulb_16 =
+  static const IconData light_bulb =
       IconData(0xe945, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData light_bulb_24 =
-      IconData(0xe946, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData link_16 =
+  static const IconData link =
       IconData(0xe947, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData link_24 =
-      IconData(0xe948, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData link_external_16 =
+  static const IconData link_external =
       IconData(0xe949, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData link_external_24 =
-      IconData(0xe94a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData list_ordered_16 =
+  static const IconData list_ordered =
       IconData(0xe94b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData list_ordered_24 =
-      IconData(0xe94c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData list_unordered_16 =
+  static const IconData list_unordered =
       IconData(0xe94d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData list_unordered_24 =
-      IconData(0xe94e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData location_16 =
+  static const IconData location =
       IconData(0xe94f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData location_24 =
-      IconData(0xe950, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData lock_16 =
+  static const IconData lock =
       IconData(0xe951, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData lock_24 =
-      IconData(0xe952, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData log_16 =
+  static const IconData log =
       IconData(0xe953, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData log_24 =
-      IconData(0xe954, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData logo_gist_16 =
+  static const IconData logo_gist =
       IconData(0xe955, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData logo_github_16 =
+  static const IconData logo_github =
       IconData(0xe956, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mail_16 =
+  static const IconData mail =
       IconData(0xe957, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mail_24 =
-      IconData(0xe958, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData markdown_16 =
+  static const IconData markdown =
       IconData(0xe959, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mark_github_16 =
+  static const IconData mark_github =
       IconData(0xe95a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData megaphone_16 =
+  static const IconData megaphone =
       IconData(0xe95b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData megaphone_24 =
-      IconData(0xe95c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mention_16 =
+  static const IconData mention =
       IconData(0xe95d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mention_24 =
-      IconData(0xe95e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData meter_16 =
+  static const IconData meter =
       IconData(0xe95f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData milestone_16 =
+  static const IconData milestone =
       IconData(0xe960, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData milestone_24 =
-      IconData(0xe961, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mirror_16 =
+  static const IconData mirror =
       IconData(0xe962, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mirror_24 =
-      IconData(0xe963, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData moon_16 =
+  static const IconData moon =
       IconData(0xe964, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData moon_24 =
-      IconData(0xe965, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mortar_board_16 =
+  static const IconData mortar_board =
       IconData(0xe966, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mortar_board_24 =
-      IconData(0xe967, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_bottom_16 =
+  static const IconData move_to_bottom =
       IconData(0xe968, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_bottom_24 =
-      IconData(0xe969, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_end_16 =
+  static const IconData move_to_end =
       IconData(0xe96a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_end_24 =
-      IconData(0xe96b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_start_16 =
+  static const IconData move_to_start =
       IconData(0xe96c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_start_24 =
-      IconData(0xe96d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_top_16 =
+  static const IconData move_to_top =
       IconData(0xe96e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData move_to_top_24 =
-      IconData(0xe96f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData multi_select_16 =
+  static const IconData multi_select =
       IconData(0xe970, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData multi_select_24 =
-      IconData(0xe971, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mute_16 =
+  static const IconData mute =
       IconData(0xe972, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData mute_24 =
-      IconData(0xe973, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData no_entry_16 =
+  static const IconData no_entry =
       IconData(0xe974, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData no_entry_24 =
-      IconData(0xe975, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData no_entry_fill_12 =
-      IconData(0xe976, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData north_star_16 =
+  static const IconData north_star =
       IconData(0xe977, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData north_star_24 =
-      IconData(0xe978, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData note_16 =
+  static const IconData note =
       IconData(0xe979, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData note_24 =
-      IconData(0xe97a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData number_16 =
+  static const IconData number =
       IconData(0xe97b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData number_24 =
-      IconData(0xe97c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData organization_16 =
+  static const IconData organization =
       IconData(0xe97d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData organization_24 =
-      IconData(0xe97e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_16 =
+  static const IconData package =
       IconData(0xe97f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_24 =
-      IconData(0xe980, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_dependencies_16 =
+  static const IconData package_dependencies =
       IconData(0xe981, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_dependencies_24 =
-      IconData(0xe982, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_dependents_16 =
+  static const IconData package_dependents =
       IconData(0xe983, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData package_dependents_24 =
-      IconData(0xe984, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paintbrush_16 =
+  static const IconData paintbrush =
       IconData(0xe985, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paper_airplane_16 =
+  static const IconData paper_airplane =
       IconData(0xe986, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paper_airplane_24 =
-      IconData(0xe987, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paperclip_16 =
+  static const IconData paperclip =
       IconData(0xe988, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paperclip_24 =
-      IconData(0xe989, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData passkey_fill_16 =
+  static const IconData passkey_fill =
       IconData(0xe98a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData passkey_fill_24 =
-      IconData(0xe98b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paste_16 =
+  static const IconData paste =
       IconData(0xe98c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData paste_24 =
-      IconData(0xe98d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pencil_16 =
+  static const IconData pencil =
       IconData(0xe98e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pencil_24 =
-      IconData(0xe98f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData people_16 =
+  static const IconData people =
       IconData(0xe990, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData people_24 =
-      IconData(0xe991, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_16 =
+  static const IconData person =
       IconData(0xe992, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_24 =
-      IconData(0xe993, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_add_16 =
+  static const IconData person_add =
       IconData(0xe994, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_add_24 =
-      IconData(0xe995, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_fill_16 =
+  static const IconData person_fill =
       IconData(0xe996, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData person_fill_24 =
-      IconData(0xe997, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pin_16 =
+  static const IconData pin =
       IconData(0xe998, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pin_24 =
-      IconData(0xe999, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pin_slash_16 =
+  static const IconData pin_slash =
       IconData(0xe99a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pin_slash_24 =
-      IconData(0xe99b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pivot_column_16 =
+  static const IconData pivot_column =
       IconData(0xe99c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pivot_column_24 =
-      IconData(0xe99d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData play_16 =
+  static const IconData play =
       IconData(0xe99e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData play_24 =
-      IconData(0xe99f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plug_16 =
+  static const IconData plug =
       IconData(0xe9a0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plug_24 =
-      IconData(0xe9a1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plus_16 =
+  static const IconData plus =
       IconData(0xe9a2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plus_24 =
-      IconData(0xe9a3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plus_circle_16 =
+  static const IconData plus_circle =
       IconData(0xe9a4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData plus_circle_24 =
-      IconData(0xe9a5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_16 =
+  static const IconData project =
       IconData(0xe9a6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_24 =
-      IconData(0xe9a7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_roadmap_16 =
+  static const IconData project_roadmap =
       IconData(0xe9a8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_roadmap_24 =
-      IconData(0xe9a9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_symlink_16 =
+  static const IconData project_symlink =
       IconData(0xe9aa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_symlink_24 =
-      IconData(0xe9ab, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_template_16 =
+  static const IconData project_template =
       IconData(0xe9ac, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData project_template_24 =
-      IconData(0xe9ad, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pulse_16 =
+  static const IconData pulse =
       IconData(0xe9ae, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData pulse_24 =
-      IconData(0xe9af, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData question_16 =
+  static const IconData question =
       IconData(0xe9b0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData question_24 =
-      IconData(0xe9b1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData quote_16 =
+  static const IconData quote =
       IconData(0xe9b2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData quote_24 =
-      IconData(0xe9b3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData read_16 =
+  static const IconData read =
       IconData(0xe9b4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData read_24 =
-      IconData(0xe9b5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData redo_16 =
+  static const IconData redo =
       IconData(0xe9b6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rel_file_path_16 =
+  static const IconData rel_file_path =
       IconData(0xe9b7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rel_file_path_24 =
-      IconData(0xe9b8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData reply_16 =
+  static const IconData reply =
       IconData(0xe9b9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData reply_24 =
-      IconData(0xe9ba, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_16 =
+  static const IconData repo =
       IconData(0xe9bb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_24 =
-      IconData(0xe9bc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_clone_16 =
+  static const IconData repo_clone =
       IconData(0xe9bd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_clone_24 =
-      IconData(0xe9be, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_deleted_16 =
+  static const IconData repo_deleted =
       IconData(0xe9bf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_forked_16 =
+  static const IconData repo_forked =
       IconData(0xe9c0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_forked_24 =
-      IconData(0xe9c1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_locked_16 =
+  static const IconData repo_locked =
       IconData(0xe9c2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_locked_24 =
-      IconData(0xe9c3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_pull_16 =
+  static const IconData repo_pull =
       IconData(0xe9c4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_pull_24 =
-      IconData(0xe9c5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_push_16 =
+  static const IconData repo_push =
       IconData(0xe9c6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_push_24 =
-      IconData(0xe9c7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData report_16 =
+  static const IconData report =
       IconData(0xe9c8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData report_24 =
-      IconData(0xe9c9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_template_16 =
+  static const IconData repo_template =
       IconData(0xe9ca, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData repo_template_24 =
-      IconData(0xe9cb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rocket_16 =
+  static const IconData rocket =
       IconData(0xe9cc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rocket_24 =
-      IconData(0xe9cd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rows_16 =
+  static const IconData rows =
       IconData(0xe9ce, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rows_24 =
-      IconData(0xe9cf, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rss_16 =
+  static const IconData rss =
       IconData(0xe9d0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData rss_24 =
-      IconData(0xe9d1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData ruby_16 =
+  static const IconData ruby =
       IconData(0xe9d2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData ruby_24 =
-      IconData(0xe9d3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData screen_full_16 =
+  static const IconData screen_full =
       IconData(0xe9d4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData screen_full_24 =
-      IconData(0xe9d5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData screen_normal_16 =
+  static const IconData screen_normal =
       IconData(0xe9d6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData screen_normal_24 =
-      IconData(0xe9d7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData search_16 =
+  static const IconData search =
       IconData(0xe9d8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData search_24 =
-      IconData(0xe9d9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData server_16 =
+  static const IconData server =
       IconData(0xe9da, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData server_24 =
-      IconData(0xe9db, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData share_16 =
+  static const IconData share =
       IconData(0xe9dc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData share_24 =
-      IconData(0xe9dd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData share_android_16 =
+  static const IconData share_android =
       IconData(0xe9de, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData share_android_24 =
-      IconData(0xe9df, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_16 =
+  static const IconData shield =
       IconData(0xe9e0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_24 =
-      IconData(0xe9e1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_check_16 =
+  static const IconData shield_check =
       IconData(0xe9e2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_check_24 =
-      IconData(0xe9e3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_lock_16 =
+  static const IconData shield_lock =
       IconData(0xe9e4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_lock_24 =
-      IconData(0xe9e5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_slash_16 =
+  static const IconData shield_slash =
       IconData(0xe9e6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_slash_24 =
-      IconData(0xe9e7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_x_16 =
+  static const IconData shield_x =
       IconData(0xe9e8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData shield_x_24 =
-      IconData(0xe9e9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sidebar_collapse_16 =
+  static const IconData sidebar_collapse =
       IconData(0xe9ea, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sidebar_collapse_24 =
-      IconData(0xe9eb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sidebar_expand_16 =
+  static const IconData sidebar_expand =
       IconData(0xe9ec, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sidebar_expand_24 =
-      IconData(0xe9ed, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sign_in_16 =
+  static const IconData sign_in =
       IconData(0xe9ee, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sign_in_24 =
-      IconData(0xe9ef, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sign_out_16 =
+  static const IconData sign_out =
       IconData(0xe9f0, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sign_out_24 =
-      IconData(0xe9f1, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData single_select_16 =
+  static const IconData single_select =
       IconData(0xe9f2, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData single_select_24 =
-      IconData(0xe9f3, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData skip_16 =
+  static const IconData skip =
       IconData(0xe9f4, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData skip_24 =
-      IconData(0xe9f5, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData skip_fill_16 =
+  static const IconData skip_fill =
       IconData(0xe9f6, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData skip_fill_24 =
-      IconData(0xe9f7, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sliders_16 =
+  static const IconData sliders =
       IconData(0xe9f8, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData smiley_16 =
+  static const IconData smiley =
       IconData(0xe9f9, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData smiley_24 =
-      IconData(0xe9fa, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sort_asc_16 =
+  static const IconData sort_asc =
       IconData(0xe9fb, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sort_asc_24 =
-      IconData(0xe9fc, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sort_desc_16 =
+  static const IconData sort_desc =
       IconData(0xe9fd, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sort_desc_24 =
-      IconData(0xe9fe, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sparkle_fill_16 =
+  static const IconData sparkle_fill =
       IconData(0xe9ff, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sponsor_tiers_16 =
+  static const IconData sponsor_tiers =
       IconData(0xea00, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sponsor_tiers_24 =
-      IconData(0xea01, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData square_16 =
+  static const IconData square =
       IconData(0xea02, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData square_24 =
-      IconData(0xea03, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData square_fill_16 =
+  static const IconData square_fill =
       IconData(0xea04, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData square_fill_24 =
-      IconData(0xea05, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData squirrel_16 =
+  static const IconData squirrel =
       IconData(0xea06, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData squirrel_24 =
-      IconData(0xea07, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stack_16 =
+  static const IconData stack =
       IconData(0xea08, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stack_24 =
-      IconData(0xea09, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData star_16 =
+  static const IconData star =
       IconData(0xea0a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData star_24 =
-      IconData(0xea0b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData star_fill_16 =
+  static const IconData star_fill =
       IconData(0xea0c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData star_fill_24 =
-      IconData(0xea0d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stop_16 =
+  static const IconData stop =
       IconData(0xea0e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stop_24 =
-      IconData(0xea0f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stopwatch_16 =
+  static const IconData stopwatch =
       IconData(0xea10, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData stopwatch_24 =
-      IconData(0xea11, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData strikethrough_16 =
+  static const IconData strikethrough =
       IconData(0xea12, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData strikethrough_24 =
-      IconData(0xea13, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sun_16 =
+  static const IconData sun =
       IconData(0xea14, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sun_24 =
-      IconData(0xea15, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sync_16 =
+  static const IconData sync =
       IconData(0xea16, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData sync_24 =
-      IconData(0xea17, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tab_24 =
-      IconData(0xea18, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tab_external_16 =
+  static const IconData tab_external =
       IconData(0xea19, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData table_16 =
+  static const IconData table =
       IconData(0xea1a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData table_24 =
-      IconData(0xea1b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tag_16 =
+  static const IconData tag =
       IconData(0xea1c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tag_24 =
-      IconData(0xea1d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tasklist_16 =
+  static const IconData tasklist =
       IconData(0xea1e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tasklist_24 =
-      IconData(0xea1f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData telescope_16 =
+  static const IconData telescope =
       IconData(0xea20, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData telescope_24 =
-      IconData(0xea21, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData telescope_fill_16 =
+  static const IconData telescope_fill =
       IconData(0xea22, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData telescope_fill_24 =
-      IconData(0xea23, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData terminal_16 =
+  static const IconData terminal =
       IconData(0xea24, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData terminal_24 =
-      IconData(0xea25, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData three_bars_16 =
+  static const IconData three_bars =
       IconData(0xea26, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData thumbsdown_16 =
+  static const IconData thumbsdown =
       IconData(0xea27, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData thumbsdown_24 =
-      IconData(0xea28, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData thumbsup_16 =
+  static const IconData thumbsup =
       IconData(0xea29, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData thumbsup_24 =
-      IconData(0xea2a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tools_16 =
+  static const IconData tools =
       IconData(0xea2b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tools_24 =
-      IconData(0xea2c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tracked_by_closed_completed_16 =
+  static const IconData tracked_by_closed_completed =
       IconData(0xea2d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tracked_by_closed_completed_24 =
-      IconData(0xea2e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tracked_by_closed_not_planned_16 =
+  static const IconData tracked_by_closed_not_planned =
       IconData(0xea2f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData tracked_by_closed_not_planned_24 =
-      IconData(0xea30, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData trash_16 =
+  static const IconData trash =
       IconData(0xea31, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData trash_24 =
-      IconData(0xea32, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_down_16 =
+  static const IconData triangle_down =
       IconData(0xea33, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_down_24 =
-      IconData(0xea34, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_left_16 =
+  static const IconData triangle_left =
       IconData(0xea35, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_left_24 =
-      IconData(0xea36, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_right_16 =
+  static const IconData triangle_right =
       IconData(0xea37, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_right_24 =
-      IconData(0xea38, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_up_16 =
+  static const IconData triangle_up =
       IconData(0xea39, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData triangle_up_24 =
-      IconData(0xea3a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData trophy_16 =
+  static const IconData trophy =
       IconData(0xea3b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData trophy_24 =
-      IconData(0xea3c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData typography_16 =
+  static const IconData typography =
       IconData(0xea3d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData typography_24 =
-      IconData(0xea3e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData undo_16 =
+  static const IconData undo =
       IconData(0xea3f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unfold_16 =
+  static const IconData unfold =
       IconData(0xea40, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unfold_24 =
-      IconData(0xea41, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unlink_16 =
+  static const IconData unlink =
       IconData(0xea42, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unlink_24 =
-      IconData(0xea43, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unlock_16 =
+  static const IconData unlock =
       IconData(0xea44, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unlock_24 =
-      IconData(0xea45, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unmute_16 =
+  static const IconData unmute =
       IconData(0xea46, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unmute_24 =
-      IconData(0xea47, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unread_16 =
+  static const IconData unread =
       IconData(0xea48, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unread_24 =
-      IconData(0xea49, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unverified_16 =
+  static const IconData unverified =
       IconData(0xea4a, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData unverified_24 =
-      IconData(0xea4b, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData upload_16 =
+  static const IconData upload =
       IconData(0xea4c, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData upload_24 =
-      IconData(0xea4d, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData verified_16 =
+  static const IconData verified =
       IconData(0xea4e, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData verified_24 =
-      IconData(0xea4f, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData versions_16 =
+  static const IconData versions =
       IconData(0xea50, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData versions_24 =
-      IconData(0xea51, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData video_16 =
+  static const IconData video =
       IconData(0xea52, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData video_24 =
-      IconData(0xea53, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData webhook_16 =
+  static const IconData webhook =
       IconData(0xea54, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData workflow_16 =
+  static const IconData workflow =
       IconData(0xea55, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData workflow_24 =
-      IconData(0xea56, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_12 =
-      IconData(0xea57, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_16 =
+  static const IconData x =
       IconData(0xea58, fontFamily: _kFontFam, fontPackage: _kFontPkg);
-  static const IconData x_24 =
-      IconData(0xea59, fontFamily: _kFontFam, fontPackage: _kFontPkg);
 }

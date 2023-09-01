@@ -4,6 +4,7 @@ library kimiko;
 export 'src/resources/constants.dart';
 export 'src/resources/validators.dart';
 export 'src/resources/strings.dart';
+export 'src/resources/kimiko_icons.dart';
 
 /// mixins
 export 'src/mixins/theme_and_size.dart';

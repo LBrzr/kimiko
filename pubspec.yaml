@@ -33,10 +33,11 @@ linter:
 
 # The following section is specific to Flutter packages.
 flutter:
+  uses-material-design: true
   fonts:
-    - family:  KimikoIcons
+    - family: KimikoIcons
       fonts:
-        - asset: ./assets/fonts/KimikoIcons.ttf
+        - asset: assets/fonts/KimikoIcons.ttf
     - family: Signika
       fonts:
         - asset: assets/fonts/signika/Signika-Bold.ttf
