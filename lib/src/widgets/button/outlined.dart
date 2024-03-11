@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../resources/constants.dart';
 import '/src/mixins/reactable_button_mixin.dart';
 import '/src/mixins/theme_and_size.dart';
 
@@ -10,6 +11,7 @@ class KimikoOutlinedButton extends ReactableButtonWidget {
     super.key,
     this.text,
     this.content,
+    super.enabled = true,
     required super.onTap,
   });
 
@@ -25,16 +27,16 @@ class KimikoOutlinedButtonState extends State<KimikoOutlinedButton>
     with ThemeAndSizeMixin, ReactableButtonStateMixin {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: react,
-      child: Material(
-        color: widget.backgroundColor ?? Colors.transparent,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(10),
-          side: BorderSide(
-            color: widget.accentColor ?? theme.shadowColor,
-          ),
+    return Material(
+      color: widget.backgroundColor ?? Colors.transparent,
+      shape: RoundedRectangleBorder(
+        borderRadius: KimikoConstants.borderRadius,
+        side: BorderSide(
+          color: widget.accentColor ?? theme.shadowColor,
         ),
+      ),
+      child: InkWell(
+        onTap: widget.enabled ? react : null,
         child: Center(
           child: processing
               ? loadingWidget

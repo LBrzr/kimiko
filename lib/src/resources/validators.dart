@@ -20,6 +20,26 @@ class KimikoValidators {
     return null;
   }
 
+  static String? isBefore(List<int>? values, DateTime date) {
+    final result = defaultDate(values);
+    if (result != null) {
+      return result;
+    } else if (date.isAfter(DateTime(values![2], values[0], values[1]))) {
+      return strings[KStrings.dateMustBeBefore];
+    }
+    return null;
+  }
+
+  static String? isAfter(List<int>? values, DateTime date) {
+    final result = defaultDate(values);
+    if (result != null) {
+      return result;
+    } else if (date.isBefore(DateTime(values![2], values[0], values[1]))) {
+      return strings[KStrings.dateMustBeAfter];
+    }
+    return null;
+  }
+
   static String? phone(String? value) {
     if (value == null || value.isEmpty) {
       return strings[KStrings.isRequired];
@@ -87,6 +107,24 @@ class KimikoValidators {
     }
   }
 
+  static String? doubleAtLeast(String? value, num min, [String? unit]) {
+    final result = double_(value);
+    if (result != null) {
+      return result;
+    } else if (double.parse(value!) < min) {
+      return KimikoStrings.mustBeAtLeast(min, unit ?? '');
+    }
+    return null;
+  }
+
+  static String? nullableDouble(String? value) {
+    if (value == null || value.isEmpty) {
+      return null;
+    } else {
+      return double_(value);
+    }
+  }
+
   static String? int_(String? value) {
     if (value == null || value.isEmpty) {
       return strings[KStrings.isRequired];
@@ -94,6 +132,32 @@ class KimikoValidators {
       return null;
     } else {
       return strings[KStrings.isInvalid];
+    }
+  }
+
+  static String? nullableInt(String? value) {
+    if (value == null || value.isEmpty) {
+      return null;
+    } else {
+      return int_(value);
+    }
+  }
+
+  static String? num_(String? value) {
+    if (value == null || value.isEmpty) {
+      return strings[KStrings.isRequired];
+    } else if (num.tryParse(value) != null) {
+      return null;
+    } else {
+      return strings[KStrings.isInvalid];
+    }
+  }
+
+  static String? nullableNum(String? value) {
+    if (value == null || value.isEmpty) {
+      return null;
+    } else {
+      return num_(value);
     }
   }
 }

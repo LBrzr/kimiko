@@ -64,6 +64,7 @@ class _CustomDropdownState<T> extends State<CustomDropdown<T>>
         CurvedAnimation(parent: animationController, curve: Curves.easeInOut);
     rotateAnimation = Tween(begin: 0.0, end: 0.5).animate(
         CurvedAnimation(parent: animationController, curve: Curves.easeInOut));
+    value = widget.value;
   }
 
   @override
@@ -83,6 +84,22 @@ class _CustomDropdownState<T> extends State<CustomDropdown<T>>
       mainAxisAlignment: widget.dropdownButtonStyle.mainAxisAlignment ??
           MainAxisAlignment.center,
     );
+  }
+
+  @override
+  void didUpdateWidget(covariant CustomDropdown<T> oldWidget) {
+    if (widget.value != null) {
+      final index =
+          widget.items.indexWhere((element) => element.value == widget.value);
+      if (index != currentIndex) currentIndex = index;
+    }
+    super.didUpdateWidget(oldWidget);
+  }
+
+  set value(T? value) {
+    if (value == null) return;
+    final index = widget.items.indexWhere((element) => element.value == value);
+    if (index != -1) setState(() => currentIndex = index);
   }
 
   @override
@@ -173,6 +190,7 @@ class _CustomDropdownState<T> extends State<CustomDropdown<T>>
                                     ? 4
                                     : widget.items.length))),
                         child: ListView(
+                          physics: const BouncingScrollPhysics(),
                           padding: widget.dropdownStyle.padding,
                           shrinkWrap: true,
                           children: widget.items.asMap().entries.map((item) {
