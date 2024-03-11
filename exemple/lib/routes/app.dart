@@ -9,6 +9,8 @@ class AppRoute extends StatefulWidget {
 }
 
 class _AppRouteState extends State<AppRoute> {
+  void buttonClicked([data]) => print(data ?? "Clicked");
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +39,27 @@ class _AppRouteState extends State<AppRoute> {
                         return Icon(icon);
                       }).toList(),
                     ),
+                  ),
+                  KimikoActionBar(
+                    items: [
+                      KimikoActionBarItem(
+                        icon: KimikoIcons.apps,
+                        title: 'Apps',
+                        onPressed: buttonClicked,
+                      ),
+                      const KimikoActionBarDivider(),
+                      KimikoActionBarItem(
+                        icon: KimikoIcons.alert,
+                        title: 'Alert',
+                        onPressed: buttonClicked,
+                      ),
+                      KimikoActionBarItem(
+                        icon: Icons.settings_outlined,
+                        title: 'Settings',
+                        onPressed: buttonClicked,
+                      ),
+                      const KimikoActionBarDivider(),
+                    ],
                   ),
                 ],
               ),

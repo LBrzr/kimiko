@@ -1,14 +1,18 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '/src/widgets/loading_icon.dart';
 
-abstract class ReactableButtonWidget extends StatefulWidget {
+abstract class ReactableButtonWidget<T> extends StatefulWidget {
   const ReactableButtonWidget({
     Key? key,
     required this.onTap,
+    this.enabled = true,
   }) : super(key: key);
 
-  final Future Function() onTap;
+  final FutureOr<T> Function() onTap;
+  final bool enabled;
 }
 
 mixin ReactableButtonStateMixin<T extends ReactableButtonWidget> on State<T> {
@@ -20,11 +24,13 @@ mixin ReactableButtonStateMixin<T extends ReactableButtonWidget> on State<T> {
       ); // const CupertinoActivityIndicator();
 
   void react() {
-    setState(() => processing = true);
-    widget.onTap().whenComplete(() {
-      if (mounted) {
-        setState(() => processing = false);
-      }
-    });
+    if (!processing) {
+      setState(() => processing = true);
+      Future.value(widget.onTap()).whenComplete(() {
+        if (mounted) {
+          setState(() => processing = false);
+        }
+      });
+    }
   }
 }

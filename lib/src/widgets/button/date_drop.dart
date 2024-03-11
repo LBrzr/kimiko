@@ -7,13 +7,15 @@ import '/src/resources/strings.dart';
 import '/src/resources/validators.dart';
 import 'drop_down.dart';
 
-class KimikoBirthdateDropdownField extends StatefulWidget {
-  const KimikoBirthdateDropdownField({
+class KimikoDateDropdownField extends StatefulWidget {
+  const KimikoDateDropdownField({
     Key? key,
     required this.onChanged,
     this.label,
     this.validator,
     this.initialValue,
+    this.minAge = 15,
+    this.maxAge = 70,
   }) : super(key: key);
 
   final DateTime? initialValue;
@@ -26,27 +28,31 @@ class KimikoBirthdateDropdownField extends StatefulWidget {
   final String? label;
   final void Function(int month, int day, int year) onChanged;
 
+  final int minAge;
+  final int maxAge;
+
   @override
-  State<KimikoBirthdateDropdownField> createState() =>
-      _KimikoBirthdateDropdownFieldState();
+  State<KimikoDateDropdownField> createState() =>
+      _KimikoDateDropdownFieldState();
 }
 
-class _KimikoBirthdateDropdownFieldState
-    extends State<KimikoBirthdateDropdownField> with ThemeAndSizeMixin {
+class _KimikoDateDropdownFieldState extends State<KimikoDateDropdownField>
+    with ThemeAndSizeMixin {
   static const strings = KimikoStrings.instance;
-  static const minAge = 15, maxAge = 70;
-  final date = DateTime.now();
   late DropdownStyle dropdownStyle;
   late DropdownButtonStyle dropdownButtonStyle;
   late int month;
   late int day;
   late int year;
 
+  int get minAge => widget.minAge;
+  int get maxAge => widget.maxAge;
+
+  DateTime get now => DateTime.now();
+
   @override
   void initState() {
-    month = widget.initialValue?.month ?? 0;
-    day = widget.initialValue?.day ?? 0;
-    year = widget.initialValue?.year ?? 0;
+    date = widget.initialValue;
     super.initState();
   }
 
@@ -66,6 +72,13 @@ class _KimikoBirthdateDropdownFieldState
       color: theme.colorScheme.background,
       borderRadius: KimikoConstants.borderRadius,
     );
+    if (now != widget.initialValue) date = widget.initialValue;
+  }
+
+  set date(DateTime? value) {
+    month = value?.month ?? 0;
+    day = value?.day ?? 0;
+    year = value?.year ?? 0;
   }
 
   DropdownItem<int> itemMapper(MapEntry<int, String> item) => DropdownItem<int>(
@@ -89,6 +102,7 @@ class _KimikoBirthdateDropdownFieldState
           children: [
             Expanded(
               child: CustomDropdown<int>(
+                value: field.value![0],
                 hasError: hasError
                     ? field.value![0] == (widget.initialValue?.month ?? 0)
                     : false,
@@ -111,6 +125,7 @@ class _KimikoBirthdateDropdownFieldState
             spacer,
             Expanded(
               child: CustomDropdown<int>(
+                value: field.value![1],
                 hasError: hasError
                     ? field.value![1] == (widget.initialValue?.day ?? 0)
                     : false,
@@ -120,7 +135,8 @@ class _KimikoBirthdateDropdownFieldState
                   field.didChange([month, day = value, year]);
                   widget.onChanged(month, day = value, year);
                 },
-                items: List.generate(31, (index) => (index + 1).toString())
+                items: List.generate(
+                        month == 2 ? 28 : 31, (index) => (index + 1).toString())
                     .asMap()
                     .entries
                     .map<DropdownItem<int>>(itemMapper)
@@ -133,6 +149,7 @@ class _KimikoBirthdateDropdownFieldState
             spacer,
             Expanded(
               child: CustomDropdown<int>(
+                value: field.value![2],
                 hasError: hasError
                     ? field.value![2] == (widget.initialValue?.year ?? 0)
                     : false,
@@ -143,7 +160,7 @@ class _KimikoBirthdateDropdownFieldState
                   widget.onChanged(month, day, year = value);
                 },
                 items: List.generate(
-                        maxAge, (index) => (date.year - (index + minAge) + 1))
+                        maxAge, (index) => (now.year - (index + minAge) + 1))
                     .asMap()
                     .entries
                     .map<DropdownItem<int>>(
@@ -169,13 +186,13 @@ class _KimikoBirthdateDropdownFieldState
                     children: [
                       title,
                       RichText(
-                          text: TextSpan(
-                              text: ' : ',
-                              style: textTheme.bodySmall!
-                                  .copyWith(color: theme.colorScheme.error),
-                              children: [
-                            TextSpan(text: field.errorText!),
-                          ]))
+                        text: TextSpan(
+                          text: ' : ',
+                          style: textTheme.bodySmall!
+                              .copyWith(color: theme.colorScheme.error),
+                          children: [TextSpan(text: field.errorText!)],
+                        ),
+                      ),
                     ],
                   )
                 : title,

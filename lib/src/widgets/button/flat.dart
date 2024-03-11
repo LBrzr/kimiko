@@ -9,6 +9,7 @@ class KimikoFlatButton extends ReactableButtonWidget {
     super.key,
     this.text,
     this.content,
+    super.enabled = true,
     required super.onTap,
   });
 
@@ -23,11 +24,12 @@ class KimikoFlatButtonState extends State<KimikoFlatButton>
     with ThemeAndSizeMixin, ReactableButtonStateMixin {
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: react,
-      child: Material(
-        color: theme.primaryColor,
-        borderRadius: KimikoConstants.borderRadius,
+    return Material(
+      color: widget.enabled ? theme.primaryColor : theme.disabledColor,
+      borderRadius: KimikoConstants.borderRadius,
+      clipBehavior: Clip.antiAlias,
+      child: InkWell(
+        onTap: widget.enabled ? react : null,
         child: Center(
           child: processing
               ? loadingWidget
@@ -36,8 +38,8 @@ class KimikoFlatButtonState extends State<KimikoFlatButton>
                   child: widget.content ??
                       Text(
                         widget.text!,
-                        style:
-                            textTheme.titleMedium!.copyWith(color: Colors.white),
+                        style: textTheme.titleMedium!
+                            .copyWith(color: Colors.white),
                       ),
                 ),
         ),
