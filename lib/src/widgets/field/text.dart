@@ -21,6 +21,8 @@ class KimikoTextField extends StatefulWidget {
     this.onSubmitted,
     this.maxLines,
     this.endIcon,
+    this.enabled = true,
+    this.autofillHints = const [],
   }) : super(key: key);
 
   /// pre-defined text field for password
@@ -36,6 +38,7 @@ class KimikoTextField extends StatefulWidget {
     TextInputAction action = TextInputAction.next,
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
+    bool enabled = true,
   }) =>
       KimikoTextField(
         key: key,
@@ -51,6 +54,8 @@ class KimikoTextField extends StatefulWidget {
         onSubmitted: onSubmitted,
         maxLines: 1,
         endIcon: endIcon,
+        enabled: enabled,
+        autofillHints: const [AutofillHints.password],
       );
 
   /// pre-defined text field for email
@@ -66,6 +71,7 @@ class KimikoTextField extends StatefulWidget {
     TextInputAction action = TextInputAction.next,
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
+    bool enabled = true,
   }) =>
       KimikoTextField(
         key: key,
@@ -83,6 +89,8 @@ class KimikoTextField extends StatefulWidget {
         action: action,
         onSubmitted: onSubmitted,
         endIcon: endIcon,
+        enabled: enabled,
+        autofillHints: const [AutofillHints.email],
       );
 
   /// pre-defined text field for phone
@@ -97,6 +105,7 @@ class KimikoTextField extends StatefulWidget {
     TextInputAction action = TextInputAction.next,
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
+    bool enabled = true,
   }) =>
       KimikoTextField(
         key: key,
@@ -111,6 +120,8 @@ class KimikoTextField extends StatefulWidget {
         action: action,
         onSubmitted: onSubmitted,
         endIcon: endIcon,
+        enabled: enabled,
+        autofillHints: const [AutofillHints.telephoneNumber],
       );
 
   /// if true, the text field will be hidden
@@ -155,6 +166,12 @@ class KimikoTextField extends StatefulWidget {
   /// text field end icon
   final Widget? endIcon;
 
+  /// enable text field
+  final bool enabled;
+
+  /// autofillHints text field
+  final List<String> autofillHints;
+
   @override
   State<KimikoTextField> createState() => _KimikoTextFieldState();
 }
@@ -174,6 +191,8 @@ class _KimikoTextFieldState extends State<KimikoTextField>
     required Color accentColor,
   }) =>
       TextField(
+        enabled: widget.enabled,
+        autofillHints: widget.autofillHints,
         cursorColor: theme.primaryColorLight,
         controller: widget.controller,
         onChanged: (value) {
@@ -248,6 +267,7 @@ class _KimikoTextFieldState extends State<KimikoTextField>
   @override
   Widget build(BuildContext context) {
     return FormField(
+      enabled: widget.enabled,
       validator: widget.validator,
       initialValue: widget.controller?.text,
       builder: (field) {
