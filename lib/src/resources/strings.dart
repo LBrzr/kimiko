@@ -131,6 +131,12 @@ enum _KimikoStringKey {
   type,
   categories,
   category,
+  previous,
+  next,
+  previous_,
+  next_,
+  previousPage,
+  nextPage,
 
   /// codes
   success,
@@ -356,6 +362,10 @@ class KimikoStrings {
     KStrings.type: "Type",
     KStrings.categories: "Categories",
     KStrings.category: "Category",
+    KStrings.previous: "Prev",
+    KStrings.next: "Next",
+    KStrings.previous_: "Previous",
+    KStrings.next_: "Next",
 
     /// response codes
     KStrings.success: "Success",
@@ -525,6 +535,10 @@ class KimikoStrings {
     KStrings.type: "Type",
     KStrings.categories: "Catégories",
     KStrings.category: "Catégorie",
+    KStrings.previous: "Prev",
+    KStrings.next: "Next",
+    KStrings.previous_: "Précédent",
+    KStrings.next_: "Suivant",
 
     /// response codes
     KStrings.success: "Succès",
