@@ -137,6 +137,10 @@ enum _KimikoStringKey {
   next_,
   previousPage,
   nextPage,
+  priviledge,
+  privileges,
+  deleteAccount,
+  deleteAccountWarning,
 
   /// codes
   success,
@@ -366,6 +370,13 @@ class KimikoStrings {
     KStrings.next: "Next",
     KStrings.previous_: "Previous",
     KStrings.next_: "Next",
+    KStrings.previousPage: "Previous page",
+    KStrings.nextPage: "Next page",
+    KStrings.priviledge: "Priviledge",
+    KStrings.privileges: "Privileges",
+    KStrings.deleteAccount: "Delete account",
+    KStrings.deleteAccountWarning:
+        "Are you sure you want to delete your account ?",
 
     /// response codes
     KStrings.success: "Success",
@@ -539,6 +550,13 @@ class KimikoStrings {
     KStrings.next: "Next",
     KStrings.previous_: "Précédent",
     KStrings.next_: "Suivant",
+    KStrings.previousPage: "Page précédente",
+    KStrings.nextPage: "Page suivante",
+    KStrings.priviledge: "Privilège",
+    KStrings.privileges: "Privilèges",
+    KStrings.deleteAccount: "Supprimer le compte",
+    KStrings.deleteAccountWarning:
+        "Etes-vous sûr de vouloir supprimer votre compte ?",
 
     /// response codes
     KStrings.success: "Succès",
