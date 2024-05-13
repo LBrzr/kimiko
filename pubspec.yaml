@@ -1,6 +1,6 @@
 name: kimiko
 description: Kimiko Desgin, a Flutter package for creating beautiful and responsive UIs. by AKA
-version: 0.0.1
+version: 0.0.2
 homepage:
 publish_to: none
 
@@ -15,7 +15,7 @@ dependencies:
       url: https://github.com/LBrzr/country-list-pick.git
   flutter:
     sdk: flutter
-  http: ^0.13.5
+  http: ^1.2.1
   iconly: ^1.0.1
   loading_animation_widget: ^1.2.0+4
   rxdart: ^0.27.7
@@ -23,7 +23,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.2
+  flutter_lints: ^4.0.0
 
 linter:
   rules:
