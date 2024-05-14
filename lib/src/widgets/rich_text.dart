@@ -31,11 +31,11 @@ class KimikoRichText extends StatefulWidget {
   final Color? color;
 
   /// Represents the style of the normal text
-  /// if null, it will be the default style [TextTheme.bodyText2]
+  /// if null, it will be the default style [TextTheme.bodyMedium]
   final TextStyle? normalTextStyle;
 
   /// Represents the style of the super text
-  /// if null, it will be the default style [TextTheme.bodyText2] with applied [color]
+  /// if null, it will be the default style [TextTheme.bodyMedium] with applied [color]
   final TextStyle? superTextStyle;
 
   @override
@@ -49,12 +49,12 @@ class _KimikoRichTextState extends State<KimikoRichText>
     return RichText(
       text: TextSpan(
         text: widget.normalText ?? '',
-        style: widget.normalTextStyle ?? textTheme.bodyText2,
+        style: widget.normalTextStyle ?? textTheme.bodyMedium,
         children: [
           TextSpan(
               text: widget.superText,
               style: widget.superTextStyle ??
-                  textTheme.bodyText2?.copyWith(
+                  textTheme.bodyMedium?.copyWith(
                       color: widget.color ?? theme.primaryColorLight),
               recognizer: TapGestureRecognizer()..onTap = widget.onTap)
         ],
