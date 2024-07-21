@@ -16,7 +16,8 @@ dependencies:
       ref: master
   flutter:
     sdk: flutter
-  http: ^1.2.1
+  http: ^0.13.5
+  # http: ^1.2.1
   iconly: ^1.0.1
   loading_animation_widget: ^1.2.1
   rxdart: ^0.27.7
