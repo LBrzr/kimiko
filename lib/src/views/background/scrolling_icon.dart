@@ -16,7 +16,7 @@ class KimikoScrollingIconBackground extends StatefulWidget {
     this.backgroundColor = Colors.transparent,
     this.randomRate = 0.825,
     this.offset = true,
-    this.duration = const Duration(minutes: 60),
+    this.duration = const Duration(minutes: 120),
     this.length = 100000,
     this.angle,
     this.iconSize,
@@ -106,7 +106,7 @@ class KimikoScrollingIconBackground extends StatefulWidget {
   ) =>
       KimikoScrollingIconBackground(
         scale: 2.75,
-        iconSize: 35,
+        iconSize: 45,
         densityFactor: 1.2,
         icons: const [
           CupertinoIcons.heart_fill,
@@ -233,7 +233,7 @@ class _KimikoScrollingIconBackgroundState
       // Create a curved animation that bounces
       final animation = Tween<double>(
         begin: 1.0 - widget.bounceSizeFactor,
-        end: 1.0 + widget.bounceSizeFactor,
+        end: 1.0 + 2 * widget.bounceSizeFactor,
       ).animate(CurvedAnimation(
         parent: controller,
         // Use elasticInOut for bouncing effect
@@ -241,7 +241,7 @@ class _KimikoScrollingIconBackgroundState
       ));
 
       // Add random initial delay for staggered effect
-      final delay = Duration(milliseconds: random.nextInt(1000));
+      final delay = Duration(milliseconds: random.nextInt(2 * widget.bounceAnimationDuration.inMilliseconds));
 
       // Start animation after delay
       Future.delayed(delay, () {
@@ -383,33 +383,35 @@ class _KimikoScrollingIconBackgroundState
     // Calculate the number of icons needed for each row
     final iconsPerRow = _calculateIconsPerRow();
 
-    return Material(
-      color: widget.backgroundColor,
-      child: Transform.scale(
-        scale: widget.scale,
-        child: Transform.rotate(
-          angle: angle,
-          child: ListView.builder(
-            physics: const NeverScrollableScrollPhysics(),
-            clipBehavior: Clip.none,
-            controller: scrollController,
-            padding: const EdgeInsets.symmetric(horizontal: 75),
-            itemBuilder: (context, index) => SingleChildScrollView(
+    return RepaintBoundary(
+      child: Material(
+        color: widget.backgroundColor,
+        child: Transform.scale(
+          scale: widget.scale,
+          child: Transform.rotate(
+            angle: angle,
+            child: ListView.builder(
               physics: const NeverScrollableScrollPhysics(),
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(
-                  iconsPerRow,
-                  widget.offset
-                      ? widget.randomRate == null
-                          ? (position) => _normalBuilder(position, index)
-                          : (position) => _randomlyBuilder(position, index)
-                      : widget.randomRate == null
-                          ? _normalBuilder
-                          : _randomlyBuilder,
-                ).toList()
-                  ..shuffle(),
+              clipBehavior: Clip.none,
+              controller: scrollController,
+              padding: const EdgeInsets.symmetric(horizontal: 75),
+              itemBuilder: (context, index) => SingleChildScrollView(
+                physics: const NeverScrollableScrollPhysics(),
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(
+                    iconsPerRow,
+                    widget.offset
+                        ? widget.randomRate == null
+                            ? (position) => _normalBuilder(position, index)
+                            : (position) => _randomlyBuilder(position, index)
+                        : widget.randomRate == null
+                            ? _normalBuilder
+                            : _randomlyBuilder,
+                  ).toList()
+                    ..shuffle(),
+                ),
               ),
             ),
           ),
