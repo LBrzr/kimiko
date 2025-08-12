@@ -10,7 +10,7 @@ class KimikoLoadingIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    return LoadingAnimationWidget.prograssiveDots(
+    return LoadingAnimationWidget.discreteCircle(
         color: color ?? theme.primaryColorLight, size: theme.iconTheme.size!);
   }
 }
