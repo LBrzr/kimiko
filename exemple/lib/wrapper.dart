@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:kimiko/kimiko.dart';
 
-import '/routes/app.dart';
+import './routes/app.dart';
 
 class Wrapper extends StatelessWidget {
   const Wrapper({super.key});
