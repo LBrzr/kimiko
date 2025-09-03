@@ -6,14 +6,13 @@ import 'package:country_list_pick/country_list_pick.dart';
 import 'package:country_list_pick/support/code_countrys.dart';
 import 'package:kimiko/kimiko.dart';
 
-
 class CountryCodeWidget extends StatefulWidget {
   const CountryCodeWidget({
-    Key? key,
+    super.key,
     this.initialSelection,
     this.onChanged,
     this.enabled = true,
-  }) : super(key: key);
+  });
 
   final void Function(CountryCode?)? onChanged;
   final String? initialSelection;

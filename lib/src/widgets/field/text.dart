@@ -8,7 +8,7 @@ import '/src/resources/strings.dart';
 
 class KimikoTextField extends StatefulWidget {
   const KimikoTextField({
-    Key? key,
+    super.key,
     this.label,
     this.hint,
     this.backgroundColor,
@@ -23,7 +23,7 @@ class KimikoTextField extends StatefulWidget {
     this.endIcon,
     this.enabled = true,
     this.autofillHints = const [],
-  }) : super(key: key);
+  });
 
   /// pre-defined text field for password
   factory KimikoTextField.password({

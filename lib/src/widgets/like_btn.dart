@@ -4,12 +4,12 @@ import 'package:iconly/iconly.dart';
 
 class KimikoLikeButton extends StatefulWidget {
   const KimikoLikeButton({
-    Key? key,
+    super.key,
     this.color,
     this.isDense = false,
     required this.hasHeart,
     required this.likeUnlike,
-  }) : super(key: key);
+  });
 
   final bool isDense, hasHeart;
   final Color? color;

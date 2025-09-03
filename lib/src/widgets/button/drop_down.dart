@@ -28,7 +28,7 @@ class CustomDropdown<T> extends StatefulWidget {
   /// if true the dropdown icon will as a leading icon, default to false
   final bool leadingIcon;
   const CustomDropdown({
-    Key? key,
+    super.key,
     this.hideIcon = false,
     required this.child,
     required this.items,
@@ -39,7 +39,7 @@ class CustomDropdown<T> extends StatefulWidget {
     required this.onChange,
     this.hasError = false,
     this.value,
-  }) : super(key: key);
+  });
 
   @override
   State<CustomDropdown<T>> createState() => _CustomDropdownState<T>();
@@ -75,7 +75,7 @@ class _CustomDropdownState<T> extends State<CustomDropdown<T>>
       padding: widget.dropdownButtonStyle.padding ?? const EdgeInsets.all(12.5),
       shape: widget.dropdownButtonStyle.shape,
       backgroundColor: widget.dropdownButtonStyle.backgroundColor ??
-          theme.colorScheme.background,
+          theme.colorScheme.surface,
       height: widget.dropdownButtonStyle.height,
       width: widget.dropdownButtonStyle.width,
       primaryColor:
@@ -242,8 +242,7 @@ class DropdownItem<T> extends StatelessWidget {
   final T value;
   final Widget child;
 
-  const DropdownItem({Key? key, required this.value, required this.child})
-      : super(key: key);
+  const DropdownItem({super.key, required this.value, required this.child});
   @override
   Widget build(BuildContext context) {
     return child;

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '/src/mixins/theme_and_size.dart';
-import '/src/resources/strings.dart';
 
 class KimikoRadioList<T> extends StatefulWidget {
   const KimikoRadioList({
@@ -47,8 +46,7 @@ class _KimikoRadioListState<T> extends State<KimikoRadioList<T>>
               style: textTheme.bodyMedium!
                   .copyWith(color: theme.colorScheme.onSurface));
           final hasError = field.hasError;
-          final accentColor =
-              hasError ? theme.colorScheme.error : theme.shadowColor;
+          // final accentColor = hasError ? theme.colorScheme.error : theme.shadowColor;
           return SizedBox(
             height: 65,
             child: Column(

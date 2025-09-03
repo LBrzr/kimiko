@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
 
 import '/src/mixins/theme_and_size.dart';
 import '/src/resources/constants.dart';
@@ -54,9 +53,7 @@ class _KimikoActionBarIconState extends State<KimikoActionBarIcon>
       child: Tooltip(
         preferBelow: true,
         message: item.title,
-        decoration: BoxDecoration(
-          shape: BoxShape.rectangle,
-        ),
+        decoration: const BoxDecoration(shape: BoxShape.rectangle),
         child: InkWell(
           onTap: item.onPressed,
           borderRadius: KimikoConstants.borderRadius,

@@ -42,14 +42,14 @@ class KimikoConstants {
         primaryColorDark: primaryColorDark,
         primaryColorLight: primaryColorLight,
         iconTheme: const IconThemeData(color: Color(0xFF556197), size: 20),
-        tabBarTheme: TabBarTheme(
+        tabBarTheme: TabBarThemeData(
           labelColor: bodyColor,
           unselectedLabelColor: disabledColor,
           labelPadding: const EdgeInsets.only(bottom: 7.5),
           labelStyle: typo.titleLarge,
           unselectedLabelStyle: typo.titleLarge,
         ),
-        dialogTheme: DialogTheme(
+        dialogTheme: DialogThemeData(
           shape: RoundedRectangleBorder(borderRadius: borderRadius),
           backgroundColor: Colors.white,
           titleTextStyle: typo.titleLarge,

@@ -50,14 +50,12 @@ class KimikoSnackBar extends SnackBar {
               content: code.message, action: action, duration: duration);
 
   KimikoSnackBar.fromColor({
-    Key? key,
+    super.key,
     required String content,
-    SnackBarAction? action,
+    super.action,
     required Color color,
     Duration? duration,
   }) : super(
-          key: key,
-          action: action,
           content: Text(content),
           margin: const EdgeInsets.symmetric(horizontal: 17.5, vertical: 10),
           duration: duration ??

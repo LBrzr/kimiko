@@ -5,14 +5,14 @@ import '/src/mixins/theme_and_size.dart';
 
 class KimikoRichText extends StatefulWidget {
   const KimikoRichText({
-    Key? key,
+    super.key,
     this.normalText,
     required this.superText,
     required this.onTap,
     this.color,
     this.normalTextStyle,
     this.superTextStyle,
-  }) : super(key: key);
+  });
 
   /// Represents the text before the super text
   /// if null, it will be empty

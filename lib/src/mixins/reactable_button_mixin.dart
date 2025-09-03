@@ -6,10 +6,10 @@ import '/src/widgets/loading_icon.dart';
 
 abstract class ReactableButtonWidget<T> extends StatefulWidget {
   const ReactableButtonWidget({
-    Key? key,
+    super.key,
     required this.onTap,
     this.enabled = true,
-  }) : super(key: key);
+  });
 
   final FutureOr<T> Function() onTap;
   final bool enabled;

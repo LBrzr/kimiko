@@ -9,14 +9,14 @@ import 'drop_down.dart';
 
 class KimikoDateDropdownField extends StatefulWidget {
   const KimikoDateDropdownField({
-    Key? key,
+    super.key,
     required this.onChanged,
     this.label,
     this.validator,
     this.initialValue,
     this.minAge = 15,
     this.maxAge = 70,
-  }) : super(key: key);
+  });
 
   final DateTime? initialValue;
 
@@ -69,7 +69,7 @@ class _KimikoDateDropdownFieldState extends State<KimikoDateDropdownField>
     );
     dropdownStyle = DropdownStyle(
       padding: const EdgeInsets.all(12.5),
-      color: theme.colorScheme.background,
+      color: theme.colorScheme.surface,
       borderRadius: KimikoConstants.borderRadius,
     );
     if (now != widget.initialValue) date = widget.initialValue;
