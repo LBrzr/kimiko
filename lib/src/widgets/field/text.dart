@@ -6,6 +6,8 @@ import '/src/resources/constants.dart';
 import '/src/resources/validators.dart';
 import '/src/resources/strings.dart';
 
+enum ErrorMessagePosition { nextToLabel, belowField }
+
 class KimikoTextField extends StatefulWidget {
   const KimikoTextField({
     Key? key,
@@ -23,6 +25,7 @@ class KimikoTextField extends StatefulWidget {
     this.endIcon,
     this.enabled = true,
     this.autofillHints = const [],
+    this.errorPosition = ErrorMessagePosition.nextToLabel,
   }) : super(key: key);
 
   /// pre-defined text field for password
@@ -39,6 +42,7 @@ class KimikoTextField extends StatefulWidget {
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
     bool enabled = true,
+    ErrorMessagePosition errorPosition = ErrorMessagePosition.nextToLabel,
   }) =>
       KimikoTextField(
         key: key,
@@ -56,6 +60,7 @@ class KimikoTextField extends StatefulWidget {
         endIcon: endIcon,
         enabled: enabled,
         autofillHints: const [AutofillHints.password],
+        errorPosition: errorPosition,
       );
 
   /// pre-defined text field for email
@@ -72,6 +77,7 @@ class KimikoTextField extends StatefulWidget {
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
     bool enabled = true,
+    ErrorMessagePosition errorPosition = ErrorMessagePosition.nextToLabel,
   }) =>
       KimikoTextField(
         key: key,
@@ -91,6 +97,7 @@ class KimikoTextField extends StatefulWidget {
         endIcon: endIcon,
         enabled: enabled,
         autofillHints: const [AutofillHints.email],
+        errorPosition: errorPosition,
       );
 
   /// pre-defined text field for phone
@@ -106,6 +113,7 @@ class KimikoTextField extends StatefulWidget {
     void Function(String? value)? onSubmitted,
     Widget? endIcon,
     bool enabled = true,
+    ErrorMessagePosition errorPosition = ErrorMessagePosition.nextToLabel,
   }) =>
       KimikoTextField(
         key: key,
@@ -122,6 +130,7 @@ class KimikoTextField extends StatefulWidget {
         endIcon: endIcon,
         enabled: enabled,
         autofillHints: const [AutofillHints.telephoneNumber],
+        errorPosition: errorPosition,
       );
 
   /// if true, the text field will be hidden
@@ -171,6 +180,9 @@ class KimikoTextField extends StatefulWidget {
 
   /// autofillHints text field
   final List<String> autofillHints;
+
+  /// error message position
+  final ErrorMessagePosition errorPosition;
 
   @override
   State<KimikoTextField> createState() => _KimikoTextFieldState();
@@ -279,20 +291,27 @@ class _KimikoTextFieldState extends State<KimikoTextField>
           final title = Text(widget.label!,
               style: textTheme.bodyMedium!
                   .copyWith(color: theme.colorScheme.onSurface));
+
+          final showErrorNextToLabel =
+              hasError && widget.errorPosition == ErrorMessagePosition.nextToLabel;
+
           return Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              hasError
+              showErrorNextToLabel
                   ? Row(
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
                         title,
-                        RichText(
-                          text: TextSpan(
-                            text: ' : ',
-                            style: textTheme.bodySmall!
-                                .copyWith(color: theme.colorScheme.error),
-                            children: [TextSpan(text: field.errorText!)],
+                        Expanded(
+                          child: RichText(
+                            overflow: TextOverflow.ellipsis,
+                            text: TextSpan(
+                              text: ' : ',
+                              style: textTheme.bodySmall!
+                                  .copyWith(color: theme.colorScheme.error),
+                              children: [TextSpan(text: field.errorText!)],
+                            ),
                           ),
                         )
                       ],
@@ -300,10 +319,35 @@ class _KimikoTextFieldState extends State<KimikoTextField>
                   : title,
               const SizedBox(height: 5),
               fieldWidget,
+              if (hasError &&
+                  widget.errorPosition == ErrorMessagePosition.belowField)
+                Padding(
+                  padding: const EdgeInsets.only(top: 5, left: 5),
+                  child: Text(
+                    field.errorText!,
+                    style: textTheme.bodySmall!
+                        .copyWith(color: theme.colorScheme.error),
+                  ),
+                ),
             ],
           );
         } else {
-          return fieldWidget;
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              fieldWidget,
+               if (hasError &&
+                  widget.errorPosition == ErrorMessagePosition.belowField)
+                Padding(
+                  padding: const EdgeInsets.only(top: 5, left: 5),
+                  child: Text(
+                    field.errorText!,
+                    style: textTheme.bodySmall!
+                        .copyWith(color: theme.colorScheme.error),
+                  ),
+                ),
+            ],
+          );
         }
       },
     );

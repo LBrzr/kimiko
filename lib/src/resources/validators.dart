@@ -69,7 +69,7 @@ class KimikoValidators {
   }
 
   static String? nullableEmail(String? value) {
-    if (value == null) {
+    if (value == null || value.isEmpty) {
       return null;
     } else {
       return email(value);
